@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1> form</h1>
+
+	<form name="contatto"action="">
+
+		<label for="nome">Nome</label>
+		<input 
+		id="nome"
+		type="text" 
+		name="nome" 
+		placeholder="Inserisci il tuo nome"
+		maxlength="16"
+		required
+
+	>
+ <!--id è per riconoscere qiel determinato imput
+ 	placeholder fa apparire un testo grigio dove inserire il testo
+ 	maxlenght lunghezza massima fino a 16
+ 	required significa campo obbligatorio-->
+
+		<br>
+		<br>
+
+		<label for="cognome">Cognome</label> <!-- Label è l'etichetta dell'imput-->
+		<input id="cognome" type="text" name="cognome">
+
+		<br>
+		<br>
+
+		<label for="email">Email</label> 
+		<input id="email" type="email" name="email">
+
+		<br>
+		<br>
+
+
+		<label for="telefono">telefono</label> 
+		<input id="telefono" type="tel" name="telefono">
+
+		<br>
+		<br>
+
+		<label for="eta">Età</label> 
+		<input id="eta" type="number" name="eta"min="10" max="100" step="5">
+
+		<br>
+		<br>
+
+		<label for="cv">carica il cv</label> 
+		<input id="cv" type="file">
+
+		<input type="hidden" name="testhidden" value="sup experience"> <!-- si inserire per nascondere la password-->
+
+
+		<label for="Password">Password</label>
+		<input id="password" type="password" name="password">
+
+
+		<br>
+		<br>
+
+		<label for="sesso">Sesso</label>
+		<input type="radio" name="sesso" value="m">M
+		<input type="radio" name="sesso" value="f">F
+		<input type="radio" name="sesso" value="a">A
+		
+		<br>
+		<br>
+
+		<label for="conosciuto">Come ci hai conosciuto?</label>
+		<input id="conosciuto" type="checkbox" name="tv" value="tv">tv
+		<input id="conosciuto" type="checkbox" name="adv" value="adv">adv
+		<input id="conosciuto" type="checkbox" name="altro" value="altro">altro
+
+		<br>
+		<br>
+
+		<label for="prov">Prov</label>
+			
+		<select id="prov"> <!-- select per selezionare, menù a tendina -->
+			<option value="Rm">Rm</option>
+			<option value="Mi">Mi</option>
+
+		</select>
+
+		<br>
+		<br>
+
+		<label for="msg">Msg</label>
+		<textarea id="msg" name="msg" placeholder="Lascia un messaggio"></textarea>
+
+
+		<input type="submit" value="Invia"> <!-- value valorizza il campo, è ad ogni imput(bottone)-->
+
+	</form>
+</body>
+</html>
